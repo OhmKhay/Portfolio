@@ -37,13 +37,3 @@ yarn dev
 ```
 
 The above command will start the application on [http://localhost:3000/](http://localhost:3000).
-
-
-## Screens
-![Home Screen](/public/assets/images/screens/home_page.png)
-![Skills Screen](/public/assets/images/screens/skills.png)
-![OpenSource Screen](/public/assets/images/screens/open_source.png)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
