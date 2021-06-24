@@ -2,18 +2,15 @@ import {
   Flex,
   Avatar,
   Box,
-  Text,
-  Badge,
-  Stack,
-  Link,
-  UnorderedList,
-  ListItem,
-  useColorModeValue
+
 } from "@chakra-ui/react";
+import Image from 'next/image';
 import { MotionBox, MotionFlex } from "../ui/motion";
 import Header from "../layout/header";
 import Projects from "./projects";
 import NextLink from 'next/link'
+import About from "./About";
+import Skills from "./Skills";
 // import UserIcon from "assets/images/user_icon.png";
 
 const ANIMATION_DURATION = 0.5;
@@ -27,6 +24,16 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
 
   return (
     <Flex direction="column" align="center">
+      <style jsx>
+        {`
+         .avatar {
+           width: 150px;
+           height: 150px;
+           border: 1px solid red;
+          border-radius: 50%;
+         }
+        `}
+      </style>
       <Flex direction={["column", "column", "row"]}>
         <MotionBox
           opacity="0"
@@ -46,9 +53,24 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
         >
           <Avatar
             size={"2xl"}
-            // src={UserIcon}
+            // placeholder={'efafae'}
             src={"https://avatars.githubusercontent.com/u/39696253?v=4"}
           />
+          {/* <div style={{
+            borderRadius: "50%",
+            width: '150px',
+            height: '150px'
+          }}>
+          <Image
+            placeholder="blur"
+            width={150}
+          
+            height={150}
+            className="avatar"
+            alt="Sai Ohm Khay"
+            src={"https://avatars.githubusercontent.com/u/39696253?v=4" as any}
+          />
+           </div> */}
         </MotionBox>
         <MotionFlex
           ml={["auto", "auto", 16]}
@@ -70,8 +92,9 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
             }
           }}
         >
-          <Header underlineColor={ORANGE} emoji="👋" mt={0}>
-            Hey!
+        
+          <Header emoji="👋 Hey! " mt={0} >
+          
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{" "}
@@ -101,58 +124,16 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
         }}
       >
         <Box mt={10}>
-          {/* <Stack
-            mb={10}
-            mx={[0, 0, 10]}
-            padding={4}
-            align="start"
-            borderLeft="4px solid"
-            borderColor={"#31C27C"}
-            color={"whatsapp"}
-            _hover={{ shadow: "lg" }}
-            // backgroundColor={useColorModeValue("gray.100", "#1e2533")}
-            rounded="sm"
-            fontSize="md"
-          >
-            <Text textAlign="center" color="#31C27C" fontWeight="bold">
-              Highlights
-            </Text>
-            <UnorderedList textAlign="left" paddingLeft={5} m={0}>
-              <ListItem>
-                <NextLink href={'/open-source'} passHref>
-                  <Link>
-                    Live/Local Github Repos
-                  <Badge ml="1" colorScheme="green">
-                      New
-                  </Badge>
-                  </Link>
-                </NextLink>
-              </ListItem>
-              <ListItem>
-                <NextLink href={'/developer-story'} passHref>
-                  <Link>
-                    Story page
-                </Link>
-                </NextLink>
-              </ListItem>
-              <ListItem>
-                <NextLink href={'/tech-stack'} passHref>
-                  <Link>
-                    Tech Stack
-                </Link>
-                </NextLink>
-              </ListItem>
-              <ListItem>
-                <NextLink href={'/achievements'} passHref>
-                  <Link>
-                    Achievements
-                </Link>
-                </NextLink>
-              </ListItem>
-            </UnorderedList>
-          </Stack> */}
-          {/* <Projects projects={projects} /> */}
+          <Skills />
+         </Box>
+        <Box mt={10} id={"about"}>
+          <About />
         </Box>
+        {/* <Box mt={10} id={"work"}>
+        
+          <Projects projects={projects} />
+        </Box> */}
+
       </MotionBox>
     </Flex>
   );

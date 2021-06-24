@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta property="og:title" content="Sai Ohm Khay - Full Stack Developer" />
-          <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+          <meta property="og:image" content="%PUBLIC_URL%/logo.jpg" />
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <body>

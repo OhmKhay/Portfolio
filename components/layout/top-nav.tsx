@@ -26,13 +26,15 @@ import NextLink from "next/link";
 
 const webLinks = [
   {name: "Home", path: "/"},
-  // { name: "About", path: "/about" },
+  { name: "About", path: "#about" },
+  // { name: "Work", path: "#work" },
 
 ];
 
 const mobileLinks = [
    {name: "Home", path: "/"},
-  //  { name: "About", path: "/about" },
+   { name: "About", path: "#about" },
+  //  { name: "Work", path: "#work" },
  
 ];
 

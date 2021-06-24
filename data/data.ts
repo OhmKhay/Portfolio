@@ -1,147 +1,135 @@
 export const companies = [
   {
-    title: "Phaedra Solutions",
-    alt: "PS image",
-    role: "Senior Software Engineer",
-    skills: ["ruby", "rails", "typescript", "javascript", "react", "aws"],
-    period: "2019 - Present",
-    logo: '/assets/images/logos/phaedra.jpeg'
+    title: "Loilem Ānanda Buddhist Colleage",
+    alt: "LABC image",
+    role: "Full Stack Web Developer",
+    skills: ["Node.js", "GraphQL", "typescript", "javascript","Dokku", "Nginx", "React","Next.js", "Degital Ocean"],
+    period: "2021/04 - 2021/05",
+    logo: '/assets/images/logos/labc.jpg'
   },
   {
-    title: "Brainx Technologies",
-    alt: "BT image",
-    role: "Software Engineer",
-    skills: ["ruby", "rails", "javascript", "python"],
-    period: "2018 - 2019",
-    logo: '/assets/images/logos/brainxtech.png'
+    title: "Shan State Buddhist University",
+    alt: "SSBU image",
+    role: "Full Stack Web Developer",
+    skills: ["Node.js", "GraphQL", "Typescript","Emotion", "Javascript","Dokku","Next.js", "Degital Ocean", "Netlify"],
+    period: "2020/08 - 2021/03",
+    logo: '/assets/images/logos/ssbu.jpg'
   },
   {
-    title: "Codenya Studio",
-    alt: "CS image",
-    role: "Co-founder, CTO",
-    skills: ["ruby", "rails", "python", "typescript", "react", "aws"],
-    period: "2018 - Present",
-    logo: '/assets/images/logos/codenya.png'
-  },
-  {
-    title: "Brainplow",
-    alt: "Brainplow image",
-    role: "Software Engineer",
-    skills: ["javascript", "python", "angular"],
-    period: "2017 - 2018",
-    logo: '/assets/images/logos/brainplow.jpg'
+    title: "Myanmar Youth Science and Technology(MYSTIHUB)",
+    alt: "MYSTIHUB image",
+    role: "Full Stack Web Developer",
+    skills: ["Node.js", "GraphQL", "Javascript", "Nginx", "React","Next.js", "AWS", "S3", "SCSS"],
+    period: "2016 - 2020",
+    logo: '/assets/images/logos/mysti.png'
   }
 ];
 
 export const institutes = [
   {
-    short_title: "FAST - NUCES",
-    title: "National University of Computer and Emerging Sciences",
-    alt: "Nuces image",
+    short_title: "BU",
+    title: "Beihua Univerisity",
+    alt: "Beihua image",
     role: "Bachelor's Degree in Computer Science",
-    skills: ["project management", "web development", "data structures"],
-    period: "2013 - 2017",
-    startingYear: "2013",
-    logo: '/assets/images/logos/fast.png',
-    awards: [
-      {
-        title: "Speed Programming Battle",
-        description:
-          "Won speed programming battle which held at FAST - NUCES.",
-        date: "May 1, 2015"
-      },
-      {
-        title: "Silver Medal",
-        description:
-          "This medal was awarded to me by FAST - NUCES for getting a CGPA of 3.9 in 2nd semester.",
-        date: "May 1, 2014"
-      },
-      {
-        title: "Speed Programming Battle",
-        description:
-          "Won speed programming battle which held at FAST - NUCES.",
-        date: "Nov 1, 2013"
-      }
-    ]
+    skills: [],
+    period: "2016 - 2020",
+    startingYear: "2016",
+    logo: '/assets/images/university/beihua.png',
+    awards: []
   },
   {
-    short_title: "Govt Degree College",
-    title: "Govt Degree College",
-    alt: "college image",
-    role: "FSC",
-    skills: ["mathematic", "chemistry", "physics"],
-    period: "2011 - 2013",
-    startingYear: "2011",
-    logo: ""
+    short_title: "NENU",
+    title: "Northeast Normal University",
+    alt: "nenu image",
+    role: "Chinese Language",
+    skills: [],
+    period: "2015 - 2016",
+    startingYear: "2015",
+    logo: '/assets/images/university/nenu.png',
   }
 ];
 
 export const skillsArray = [
-  {
-    name: "Ruby on Rails",
-    description: "Web development",
-    link: "https://rubyonrails.org/",
-    type: "development",
-    image: '/assets/images/skills/rails.png'
-  },
+
   {
     name: "React",
-    description: "Web development",
+    description: "Web Development",
     link: "https://reactjs.org/",
     type: "development",
     image: '/assets/images/skills/react.png'
   },
   {
-    name: "Ruby",
-    description: "Web development, scrapping",
-    link: "https://www.ruby-lang.org/en/",
-    type: "development",
-    image: '/assets/images/skills/ruby.png'
-  },
-  {
-    name: "Python",
-    description: "Web development, scrapping",
-    link: "https://www.python.org/",
-    type: "development",
-    image: '/assets/images/skills/python.png'
-  },
-  {
     name: "Javascript",
-    description: "Web development",
+    description: "Web Development",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     type: "development",
     image: '/assets/images/skills/javascript.png'
   },
   {
     name: "Typescript",
-    description: "Web development",
+    description: "Web Development",
     link: "https://www.typescriptlang.org/",
     type: "development",
     image: '/assets/images/skills/typescript.png'
   },
   {
-    name: "Html5",
-    description: "Web layouts",
+    name: "GraphQL",
+    description: "Web Development",
+    link: "https://graphql.org/",
+    type: "development",
+    image: '/assets/images/skills/graphql.png'
+  },
+  {
+    name: "Node.js",
+    description: "Web Development",
+    link: "https://nodejs.org/en/",
+    type: "development",
+    image: '/assets/images/skills/nodejs.png'
+  },
+  {
+    name: "HTML5",
+    description: "Web Layouts",
     link: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
     type: "development",
     image: '/assets/images/skills/html-5.png'
   },
   {
-    name: "Css3",
-    description: "Web design",
+    name: "Webpack",
+    description: "Web Development",
+    link: "https://webpack.js.org/",
+    type: "development",
+    image: '/assets/images/skills/webpack.png'
+  },
+  {
+    name: "CSS3",
+    description: "Web Design",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     type: "design",
     image: '/assets/images/skills/css3.png'
   },
   {
+    name: "SCSS",
+    description: "Web Design",
+    link: "https://sass-lang.com/",
+    type: "design",
+    image: '/assets/images/skills/sass.png'
+  },
+  {
+    name: "Emotion",
+    description: "Web Design",
+    link: "https://emotion.sh/docs/introduction",
+    type: "design",
+    image: '/assets/images/skills/emotion.png'
+  },
+  {
     name: "Bootstrap",
-    description: "Web design",
+    description: "Web Design",
     link: "https://getbootstrap.com/",
     type: "design",
     image: '/assets/images/skills/bootstrap.png'
   },
   {
-    name: "Postgres",
+    name: "PostgreSQL",
     description: "Database",
     link: "https://www.postgresql.org/",
     type: "database",
@@ -153,6 +141,13 @@ export const skillsArray = [
     link: "https://www.mysql.com/",
     type: "database",
     image: '/assets/images/skills/mysql.png'
+  },
+  {
+    name: "MongoDB",
+    description: "Database",
+    link: "https://www.mongodb.com/",
+    type: "database",
+    image: '/assets/images/skills/mongo.png'
   },
   {
     name: "Redis",
@@ -167,6 +162,20 @@ export const skillsArray = [
     link: "https://www.heroku.com/",
     type: "devops",
     image: '/assets/images/skills/heroku.png'
+  },
+  {
+    name: "Netfily",
+    description: "Devops",
+    link: "https://www.netlify.com/",
+    type: "devops",
+    image: '/assets/images/skills/netfily.png'
+  },
+  {
+    name: "Dokku",
+    description: "Devops",
+    link: "https://dokku.com/",
+    type: "devops",
+    image: '/assets/images/skills/dokku.png'
   },
   {
     name: "AWS",

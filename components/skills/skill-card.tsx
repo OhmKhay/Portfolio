@@ -7,7 +7,7 @@ import {
   Box,
   Link,
   Image,
-  Skeleton
+  SkeletonCircle
 } from "@chakra-ui/react";
 import { usePalette } from "react-palette";
 import { MotionBox } from "../ui/motion";
@@ -19,7 +19,7 @@ const SkillCard = ({ name, image, link, description }) => {
 
   return (
     <MotionBox variants={item}>
-      <MotionBox whileHover={{ y: -5 }}>
+      <MotionBox whileHover={{ y: -2 }}>
       <NextLink href={link} passHref>
         <Link isExternal>
           <HStack
@@ -32,7 +32,7 @@ const SkillCard = ({ name, image, link, description }) => {
             textAlign="left"
             align="start"
             spacing={4}
-            _hover={{ shadow: "md" }}
+            _hover={{ shadow: "sm" }}
           >
             <Box
               rounded="lg"
@@ -47,20 +47,23 @@ const SkillCard = ({ name, image, link, description }) => {
                 position="absolute"
                 top={0}
                 bottom={0}
+                borderRadius={'50%'}
                 left={0}
                 right={0}
                 opacity={0.25}
               ></Box>
               {loading ? (
-                <Skeleton height={26} width={26} rounded="md" />
+                <SkeletonCircle size={"8"} />
               ) : (
                 <Image
                   src={image}
+              
                   height={26}
                   width={26}
                   layout="fixed"
                   rounded="md"
                 />
+               
               )}
             </Box>
             <VStack
