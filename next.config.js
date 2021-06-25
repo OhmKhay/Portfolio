@@ -8,8 +8,7 @@ module.exports = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      "/": { page: "/" },
-      "/about": { page: "/about" },
+      "/": { page: "/" }
    
     }
   }
