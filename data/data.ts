@@ -5,7 +5,8 @@ export const companies = [
     role: "Full Stack Web Developer",
     skills: ["Node.js", "GraphQL", "typescript", "javascript","Dokku", "Nginx", "React","Next.js", "Degital Ocean"],
     period: "2021/04 - 2021/05",
-    logo: '/assets/images/logos/labc.jpg'
+    logo: '/assets/images/logos/labc.jpg',
+    link: "https://labc.edu.mm/",
   },
   {
     title: "Shan State Buddhist University",
@@ -13,7 +14,16 @@ export const companies = [
     role: "Full Stack Web Developer",
     skills: ["Node.js", "GraphQL", "Typescript","Emotion", "Javascript","Dokku","Next.js", "Degital Ocean", "Netlify"],
     period: "2020/08 - 2021/03",
-    logo: '/assets/images/logos/ssbu.jpg'
+    logo: '/assets/images/logos/ssbu.jpg',
+    link: "https://ssbu.edu.mm/",
+  },
+  {
+    title: "YunTun (Beijing) Education Technology Co., Ltd",
+    alt: "yuntun image",
+    role: "Front End Developer",
+    skills: ["React", "React Native","Wechat Pay", "Javascript", "Ant Design", "Nginx"],
+    period: "2019/07 - 2019/10",
+    logo: '/assets/images/logos/yuntun.jpg'
   },
   {
     title: "Myanmar Youth Science and Technology(MYSTIHUB)",
@@ -21,7 +31,8 @@ export const companies = [
     role: "Full Stack Web Developer",
     skills: ["Node.js", "GraphQL", "Javascript", "Nginx", "React","Next.js", "AWS", "S3", "SCSS"],
     period: "2016 - 2020",
-    logo: '/assets/images/logos/mysti.png'
+    logo: '/assets/images/logos/mysti.png',
+    link: "https://mystihub.com/",
   }
 ];
 
@@ -54,8 +65,8 @@ export const skillsArray = [
   {
     name: "React",
     description: "Web Development",
-    link: "https://reactjs.org/",
-    type: "development",
+
+    type: "development",    link: "https://reactjs.org/",
     image: '/assets/images/skills/react.png'
   },
   {

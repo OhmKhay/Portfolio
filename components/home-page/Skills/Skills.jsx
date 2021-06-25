@@ -14,7 +14,7 @@ import {
   SimpleGrid
 } from "@chakra-ui/react";
 import Section from "../../skills/section";
-import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
+import { DiCss3, DiAtom, DiCode, DiDocker } from "react-icons/di";
 import { BiDesktop } from "react-icons/bi";
 import { GiSpiderWeb } from "react-icons/gi";
 import SkillCard from "../../skills/skill-card";
@@ -48,15 +48,14 @@ const MySkills = () => {
               <Header mt={0} mb={1}>
                 Tech Stack
             </Header>
-              {/* <Text
+              <Text
                 fontSize={"xl"}
                 color={useColorModeValue("gray.500", "gray.200")}
                 maxW="lg"
                 textAlign="center"
               >
-                A list of my favorite tools and technologies that I use on a
-                regular basis.
-            </Text> */}
+                A list of my favorite web development tools and technologies.
+            </Text>
             </VStack>
           </Section>
           <Section>
@@ -79,7 +78,7 @@ const MySkills = () => {
                   onClick={() => filterSkills("")}
                 >
                   <HStack spacing={1}>
-                    <Icon as={AiTwotoneThunderbolt} />
+                    <Icon as={DiCode} />
                     <Text>All</Text>
                   </HStack>
                 </Tab>
@@ -95,7 +94,7 @@ const MySkills = () => {
                   onClick={() => filterSkills("development")}
                 >
                   <HStack spacing={1}>
-                    <Icon as={BiDesktop} />
+                    <Icon as={DiAtom} />
                     <Text>Web Development</Text>
                   </HStack>
                 </Tab>
@@ -111,7 +110,7 @@ const MySkills = () => {
                   onClick={() => filterSkills("design")}
                 >
                   <HStack spacing={1}>
-                    <Icon as={GiSpiderWeb} />
+                    <Icon as={DiCss3} />
                     <Text>Web Design</Text>
                   </HStack>
                 </Tab>
@@ -127,7 +126,7 @@ const MySkills = () => {
                   onClick={() => filterSkills("devops")}
                 >
                   <HStack spacing={1}>
-                    <Icon as={AiOutlineCloudServer} />
+                    <Icon as={DiDocker} />
                     <Text>Devops</Text>
                   </HStack>
                 </Tab>

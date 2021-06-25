@@ -6,11 +6,13 @@ import {
   Heading,
   Flex,
   Text,
+  Link,
   Tag,
   Image,
   useColorMode,
   useColorModeValue
 } from "@chakra-ui/react";
+import NextLink from 'next/link';
 import { FaGraduationCap } from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import {
@@ -30,14 +32,17 @@ interface CardProps {
   logo: string;
   colorMode: string;
   alt?: string;
+  link?: string;
 }
 
 const TURQUOISE = "#06b6d4";
 
 const Card = (props: CardProps) => {
-  const { title, role, skills, period, logo, colorMode, alt } = props;
+  const { title, role, skills, period, logo, colorMode, alt, link } = props;
+
   return (
     <CardTransition>
+      
       <Box
         px={4}
         py={5}
@@ -47,9 +52,13 @@ const Card = (props: CardProps) => {
         position="relative"
         rounded="md"
       >
+     
         <Flex justifyContent="space-between">
           <Flex>
-            <Image
+             {/* <NextLink href={link} passHref>
+                  <Link isExternal> */}
+                  
+                  <Image
               rounded="full"
               w={16}
               h={16}
@@ -58,6 +67,7 @@ const Card = (props: CardProps) => {
               src={logo}
               alt={alt}
             />
+          
             <Stack spacing={2} pl={3} align="left">
               <Heading
                 align="left"
@@ -77,16 +87,23 @@ const Card = (props: CardProps) => {
                 spacing={1}
                 mt={3}
                 isInline
+                flexWrap={'wrap'}
+                padding={4}
                 alignItems="center"
                 display={["none", "none", "flex", "flex"]}
               >
                 {skills.map(skill => (
-                  <Tag size="sm" padding="0 3px" key={skill}>
+                  <Tag size="sm" padding="0 6px" key={skill} 
+             
+                 >
                     {skill}
                   </Tag>
                 ))}
               </Stack>
             </Stack>
+
+                  {/* </Link>
+             </NextLink> */}
           </Flex>
           <Stack display={["none", "none", "flex", "flex"]}>
             <Text fontSize={14} color={`mode.${colorMode}.career.subtext`}>
@@ -94,11 +111,13 @@ const Card = (props: CardProps) => {
             </Text>
           </Stack>
         </Flex>
+
         <Stack
           spacing={1}
           mt={3}
           isInline
           alignItems="center"
+          flexWrap={'wrap'}
           display={["flex", "flex", "none", "none"]}
         >
           {skills.map(skill => (
@@ -107,6 +126,7 @@ const Card = (props: CardProps) => {
             </Tag>
           ))}
         </Stack>
+        
       </Box>
     </CardTransition>
   );
@@ -122,17 +142,18 @@ const About = () => {
         <StaggerChildren>
           <MotionBox>
             <Heading>
-              <Flex alignItems="center">
-                <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-                  Career
-              </Header>
+              <Flex alignItems="center" padding={5} >
+              
                 <Stack pl={3}>
                   <Box as={BsFillBriefcaseFill} size="25px" />
                 </Stack>
+                <Box as={'p'} fontSize={14} paddingLeft={5} paddingRight={5} >
+                 Work
+               </Box>
               </Flex>
             </Heading>
           </MotionBox>
-          <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+          <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12} > 
             {companies.map((company, index) => (
               <MotionBox whileHover={{ y: -5 }} key={index}>
                 <Card
@@ -143,18 +164,21 @@ const About = () => {
                   period={company.period}
                   logo={company.logo}
                   colorMode={colorMode}
+                  link={company.link}
                 />
               </MotionBox>
             ))}
           </VStack>
           <Heading>
-            <Flex alignItems="center">
-              <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-                Education
-            </Header>
+           
+            <Flex alignItems="center" padding={5}>
+          
               <Stack pl={3}>
                 <Box as={FaGraduationCap} size="25px" />
               </Stack>
+              <Box as={'p'} fontSize={14} paddingLeft={5} paddingRight={5} >
+               Education
+              </Box>
             </Flex>
           </Heading>
           <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>

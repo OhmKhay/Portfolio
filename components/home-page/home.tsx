@@ -97,13 +97,12 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
           
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-            My name is{" "}
+             I&apos;m {" "}
             <Box as="strong" fontWeight="600">
-              Sai Ohm Khay
+            Ohm Khur.
             </Box>{" "}
-            and I&apos;m a{" "}
-            <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer from Myamar.
+            <Box as="span">
+              A Full Stack Web Developer based in Myanmar.
             </Box>
           </Box>
         </MotionFlex>
@@ -127,6 +126,7 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
           <Skills />
          </Box>
         <Box mt={10} id={"about"}>
+           
           <About />
         </Box>
         {/* <Box mt={10} id={"work"}>
