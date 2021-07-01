@@ -1,6 +1,6 @@
 export const companies = [
   {
-    title: "Loilem Ānanda Buddhist Colleage",
+    title: "Loilem Ānanda Buddhist College",
     alt: "LABC image",
     role: "Full Stack Web Developer",
     skills: ["Node.js", "GraphQL", "typescript", "javascript","Dokku", "Nginx", "React","Next.js", "Degital Ocean"],
