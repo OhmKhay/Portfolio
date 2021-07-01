@@ -4,11 +4,9 @@ import {
   Box,
 
 } from "@chakra-ui/react";
-import Image from 'next/image';
+
 import { MotionBox, MotionFlex } from "../ui/motion";
 import Header from "../layout/header";
-import Projects from "./projects";
-import NextLink from 'next/link'
 import About from "./About";
 import Skills from "./Skills";
 // import UserIcon from "assets/images/user_icon.png";
@@ -56,21 +54,7 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
             // placeholder={'efafae'}
             src={"https://avatars.githubusercontent.com/u/39696253?v=4"}
           />
-          {/* <div style={{
-            borderRadius: "50%",
-            width: '150px',
-            height: '150px'
-          }}>
-          <Image
-            placeholder="blur"
-            width={150}
-          
-            height={150}
-            className="avatar"
-            alt="Sai Ohm Khay"
-            src={"https://avatars.githubusercontent.com/u/39696253?v=4" as any}
-          />
-           </div> */}
+       
         </MotionBox>
         <MotionFlex
           ml={["auto", "auto", 16]}

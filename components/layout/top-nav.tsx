@@ -2,26 +2,17 @@ import {
   Box,
   Flex,
   HStack,
-  Button,
-  Text,
   Link,
   IconButton,
   useDisclosure,
   useColorModeValue,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Stack,
-  Icon
+  Stack
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { ColorModeSwitcher } from "../ui/ColorModeSwitcher";
-// import UserIcon from "assets/images/user_icon.png";
-import { AiTwotoneThunderbolt } from "react-icons/ai";
-import { BiChevronDown } from "react-icons/bi";
+
 import NextLink from "next/link";
 
 const webLinks = [
@@ -116,7 +107,7 @@ export default function TopNav() {
           <Flex alignItems={"center"}>
             <IconButton
               as={Link}
-              href={"https://github.com/OhmKhur"}
+              href={"https://github.com/OhmKhay"}
               size={"md"}
               icon={<FaGithub />}
               aria-label={"Github account"}
