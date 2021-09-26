@@ -1,4 +1,3 @@
-
 This is a portfolio application built using Next.js.
 
 ## Overview
@@ -21,13 +20,13 @@ This application is built using the following technologies:
 ### 1. **Clone the application**
 
 ```sh
-git clone https://github.com/MA-Ahmad/myPortfolio
+git clone
 ```
 
 ### 2. **Install necessary dependencies for the application**
 
 ```sh
-cd myPortfolio && yarn install
+cd Portfolio && yarn install
 ```
 
 ### 3. **Start the application**

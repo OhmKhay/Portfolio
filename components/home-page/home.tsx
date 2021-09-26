@@ -1,14 +1,9 @@
-import {
-  Flex,
-  Avatar,
-  Box,
-
-} from "@chakra-ui/react";
+import { Flex, Avatar, Box } from "@chakra-ui/react";
 
 import { MotionBox, MotionFlex } from "../ui/motion";
 import Header from "../layout/header";
-import About from "./About";
-import Skills from "./Skills";
+// import About from "./About";
+// import Skills from "./Skills";
 // import UserIcon from "assets/images/user_icon.png";
 
 const ANIMATION_DURATION = 0.5;
@@ -19,17 +14,16 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ projects }) => {
-
   return (
     <Flex direction="column" align="center">
       <style jsx>
         {`
-         .avatar {
-           width: 150px;
-           height: 150px;
-           border: 1px solid red;
-          border-radius: 50%;
-         }
+          .avatar {
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            border-radius: 50%;
+          }
         `}
       </style>
       <Flex direction={["column", "column", "row"]}>
@@ -37,14 +31,14 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
           opacity="0"
           initial={{
             translateX: -150,
-            opacity: 0
+            opacity: 0,
           }}
           animate={{
             translateX: 0,
             opacity: 1,
             transition: {
-              duration: ANIMATION_DURATION
-            }
+              duration: ANIMATION_DURATION,
+            },
           }}
           m="auto"
           mb={[16, 16, "auto"]}
@@ -54,7 +48,6 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
             // placeholder={'efafae'}
             src={"https://avatars.githubusercontent.com/u/39696253?v=4"}
           />
-       
         </MotionBox>
         <MotionFlex
           ml={["auto", "auto", 16]}
@@ -66,28 +59,23 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
           direction="column"
           initial={{
             opacity: 0,
-            translateX: 150
+            translateX: 150,
           }}
           animate={{
             opacity: 1,
             translateX: 0,
             transition: {
-              duration: ANIMATION_DURATION
-            }
+              duration: ANIMATION_DURATION,
+            },
           }}
         >
-        
-          <Header emoji="👋 Hey! " mt={0} >
-          
-          </Header>
+          <Header emoji="👋 Hey! " mt={0}></Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-             I&apos;m {" "}
+            I&apos;m{" "}
             <Box as="strong" fontWeight="600">
-            Ohm Khur.
+              Ohm Khur.
             </Box>{" "}
-            <Box as="span">
-              A Full Stack Web Developer based in Myanmar.
-            </Box>
+            <Box as="span">A Full Stack Web Developer based in Myanmar.</Box>
           </Box>
         </MotionFlex>
       </Flex>
@@ -95,29 +83,28 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
         w="100%"
         opacity="0"
         initial={{
-          translateY: 80
+          translateY: 80,
         }}
         animate={{
           translateY: 0,
           opacity: 1,
           transition: {
             delay: ANIMATION_DURATION - 0.1,
-            duration: ANIMATION_DURATION
-          }
+            duration: ANIMATION_DURATION,
+          },
         }}
       >
-        <Box mt={10}>
+        {/* <Box mt={10}>
           <Skills />
          </Box>
         <Box mt={10} id={"about"}>
            
           <About />
-        </Box>
+        </Box> */}
         {/* <Box mt={10} id={"work"}>
         
           <Projects projects={projects} />
         </Box> */}
-
       </MotionBox>
     </Flex>
   );
